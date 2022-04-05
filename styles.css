@@ -1,0 +1,330 @@
+body {
+  margin: 0px;
+  font-family: Verdana, sans-serif;
+  background-image: url(/Users/zuikeiranyuuta/Desktop/UVERworldTool/haikei.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  max-width: 100%;
+}
+
+header {
+  padding: 0 16px;
+}
+
+header h1 {
+  color: black;
+  font-size: 54px;
+  line-height: 64px;
+  text-align: center;
+  margin: 16px 0 16px 0;
+}
+
+
+/* ロゴとハンバーガーメニュー */
+/* .sp-menu {
+  margin-left: auto; 
+  position: absolute;
+  top: 16px;
+  right:16px;
+} */
+
+/* .sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+} */
+
+/* .sp-menu #open.hide {
+  display: none;
+} */
+
+/* main {
+  padding: 0 16px;
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+}
+
+/* .overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* .overlay #close {
+  position: absolute;
+  top: 32px;
+  right:16px;
+  font-size: 32px;
+  cursor: pointer;
+} */
+
+/* .overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s, transform 0.3s;
+} */
+
+/* .overlay.show li {
+  opacity: 1;
+  transform: none;
+} */
+
+/* .overlay.show li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.overlay.show li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.overlay.show li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.overlay.show li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.overlay.show li:nth-child(5) {
+  transition-delay: 0.5s;
+} */
+
+/* .overlay.drums-slide {
+  transition-property: transform;
+  transform: translateX(150px);
+  transition-duration: 1s;
+} */
+
+
+
+/* 真太郎メニュ */
+.shintaro {
+  list-style: none;
+  padding: 0; 
+  margin: 0;  
+}
+.shintaro li {
+  padding: 8px;
+}
+.shintaro li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer; 
+}
+.shintaro li a:hover {
+  opacity: 0.5;
+}
+
+.pc-menu {
+  display: none;
+  justify-content: center;
+}
+.content {
+  display: none;
+}
+
+section {
+  display: none;
+}
+
+/* footer {
+  display: none;
+} */
+
+/* @media (min-width: 600px) { */
+
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  section {
+    display: block;
+  }
+
+    /* ここまでハンバーガー */
+
+  .pc-menu .tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .pc-menu a {
+    display: block;
+    width: 120px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .pc-menu a:hover {
+    background: #f2f2f2;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+
+  .pc-menu li {
+    width: 220px;
+  }
+
+  .pc-menu li a {
+    display: inline-block;
+    /* このwidthはメニューの文字間 */
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    color: rgb(173, 3, 3);
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    justify-content: center;
+  }
+
+  .pc-menu li a.active {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(173, 3, 3);
+  }
+
+  .pc-menu li a:not(.active):hover {
+    background: rgb(105, 104, 104, 0.5);
+    color: rgb(173, 3, 3);
+  }
+
+  .content.active {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(249, 72, 72);
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .content {
+    display: none;
+  }
+
+  #home {
+    display: none;
+  }
+
+/* 真太郎メニュ */
+/* .overlay.drums-slide {
+  display: block;
+} */
+
+.shintaro {
+  list-style: none;
+  padding: 0; 
+  margin: 0;  
+}
+.shintaro li {
+  padding: 8px;
+}
+.shintaro li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer; 
+}
+.shintaro li a:hover {
+  opacity: 0.5;
+}
+
+
+/* 信人メニュー */
+.nobuto {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+.nobuto li {
+  padding: 8px;
+}
+.nobuto li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer;
+}
+.nobuto li a:hover {
+  opacity: 0.5;
+}
+
+
+/* 彰メニュー */
+.akira {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+.akira li {
+  padding: 8px;
+}
+.akira li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer;
+}
+.akira li a:hover {
+  opacity: 0.5;
+}
+
+
+/* 克哉メニュー */
+.katsuya {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+.katsuya li {
+  padding: 8px;
+}
+.katsuya li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer;
+}
+.katsuya li a:hover {
+  opacity: 0.5;
+}
+
+
+/* プリプロメニュー */
+.rec {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+.rec li {
+  padding: 8px;
+}
+.rec li a {
+  color:rgb(247, 244, 244);
+  text-decoration: none;
+  cursor: pointer;
+}
+.rec li a:hover {
+  opacity: 0.5;
+}
+
+/* } */
