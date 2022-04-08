@@ -130,21 +130,21 @@ header h1 {
 .katsuya li a:hover {
   opacity: 0.5;
 }
-/* プリプロメニュー */
-.rec {
+/* 誠果メニュー */
+.seika {
   list-style: none;
   padding: 0;
   margin: 0;  
 }
-.rec li {
+.seika li {
   padding: 8px;
 }
-.rec li a {
+.seika li a {
   color:rgb(247, 244, 244);
   text-decoration: none;
   cursor: pointer;
 }
-.rec li a:hover {
+.seika li a:hover {
   opacity: 0.5;
 }
 
